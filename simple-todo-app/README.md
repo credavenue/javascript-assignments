@@ -16,3 +16,6 @@ Screenshot:
 * Unit test with any framework
 
 Don't worry too much about the aesthetics, should be legible that's it!
+
+##########
+I did this assignment, before getting to know that am allowed to use framework. Hence this is written in plain javascript, and mocha for testing purposes.
