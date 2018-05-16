@@ -1,0 +1,9 @@
+.strike{
+    text-decoration: line-through;
+}
+input[type="text"]:disabled {
+    border: none;
+}
+.hide{
+    display: none;
+}
