@@ -1,0 +1,6 @@
+input :disabled{
+  border: none;
+}
+.completed-list{
+  text-decoration: line-through;
+}

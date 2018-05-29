@@ -1,0 +1,30 @@
+<div>
+  <h2>
+    ToDO
+  </h2>
+  <hr/>
+  <div *ngFor="let item of incompleteItems;let i = index;">
+    <input type="checkbox" (click)="completeItem(i)" [(ngModel)]='item.completed'/>
+    <input  type="text" [(ngModel)]='item.name' [disabled]= '!item.edit'/>
+    <button (click)="editItem(i, 'inc')">
+      <span *ngIf="item.edit"> Save</span>
+      <span *ngIf="!item.edit"> Edit</span>
+    </button>
+    <button (click)="deleteItem(i, 'inc')">Delete</button>
+  </div>
+</div>
+<div>
+  <h2>
+    Completed
+  </h2>
+  <hr/>
+  <div *ngFor="let item of completedItems;let i = index;">
+      <input type="checkbox" [disabled]="true" [(ngModel)]='item.completed'/>
+      <input  type="text" [(ngModel)]='item.name' class='completed-list' [disabled]= '!item.edit'/>
+      <button (click)="editItem(i, 'com')">
+        <span *ngIf="item.edit"> Save</span>
+        <span *ngIf="!item.edit"> Edit</span>
+      </button>
+      <button (click)="deleteItem(i, 'com')">Delete</button>
+    </div>
+</div>

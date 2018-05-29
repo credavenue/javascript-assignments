@@ -1,0 +1,6 @@
+<h2>Add an Item</h2>
+<hr/>
+<input type="text" name="item" [(ngModel)]="item.name"/>
+<button (click)="addItem()">Add</button>
+
+<app-item-list [items]="items"></app-item-list>
