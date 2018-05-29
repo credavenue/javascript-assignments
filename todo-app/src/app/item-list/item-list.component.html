@@ -5,7 +5,7 @@
   <hr/>
   <div *ngFor="let item of incompleteItems;let i = index;">
     <input type="checkbox" (click)="completeItem(i)" [(ngModel)]='item.completed'/>
-    <input  type="text" [(ngModel)]='item.name' [disabled]= '!item.edit'/>
+    <input  type="text" [(ngModel)]='item.name' [disabled]= '!item.edit' [ngClass]="{'disabled-text': !item.edit}">
     <button (click)="editItem(i, 'inc')">
       <span *ngIf="item.edit"> Save</span>
       <span *ngIf="!item.edit"> Edit</span>

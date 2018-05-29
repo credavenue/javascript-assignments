@@ -1,0 +1,10 @@
+.completed-list{
+  text-decoration: line-through;
+}
+
+.disabled-text{
+  border-right: none;
+  border-top: none;
+  border-left: none;
+}
+
