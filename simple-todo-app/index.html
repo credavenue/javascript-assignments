@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="app.css" />
+    
+</head>
+<body>
+    <h1>ToDo App</h1>
+
+    <h4>ADD Item</h4>
+    <hr>
+    <input id="itemInput" type="text" value=""/>
+    <button id="addBtn" onclick="addItem()">Add</button>
+    <br/>
+
+    <h4>TODO</h4>
+    <hr>
+    <ul id="todoList">
+    </ul>
+    <br/>
+
+    <h4>COMPLETED (One empty item added because of tests running)</h4>
+    <hr>
+    <ul id="completedList">
+
+    </ul>
+
+    <button id="mochaBtn" onclick="showTestResults()"> Show Test Results</button>
+    <div id="mocha" class="hide"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.3.4/mocha.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.4.1/chai.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="./app.spec.js"></script>
+    
+</body>
+</html>
