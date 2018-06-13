@@ -1,0 +1,32 @@
+<input type="text" [(ngModel)]="newItem">
+<button (click) = "addItem(newItem)">Add</button>
+<h2>TODO</h2>
+<hr>
+<div class="items todo">
+  <div ng-init="check=true"   *ngFor="let item of toDoItems()">
+    <div ng-mouseover="check=false" ng-mouseleave="check=true">    
+        <input type="checkbox" [(ngModel)]="item.done">
+        <label *ngIf="item.edit==false" >{{item.name}}</label>        
+        <input *ngIf="item.edit==true" type="text" [(ngModel)]="item.name">
+        <button *ngIf="item.edit==false" (click)="onEdit(item)"> Edit </button>
+        <button *ngIf="item.edit==true" (click)="onSave(item)"> Save </button>
+        <button ng-show="check==false" (click)="onRemove(item)"> Delete </button>
+    </div>
+</div>
+<br>
+<h2>COMPLETED</h2>
+<hr>
+<div class="items donetask">
+  <div ng-init="check=true"   *ngFor="let item of doneItems()">
+    <div ng-mouseover="check=false" ng-mouseleave="check=true">    
+        <input type="checkbox" checked  [(ngModel)]="item.done">
+          <label *ngIf="item.edit==false" >{{item.name}}</label>        
+          <input *ngIf="item.edit==true" type="text" [(ngModel)]="item.name">
+        <button *ngIf="item.edit==false" (click)="onEdit(item)"> Edit </button>
+        <button *ngIf="item.edit==true" (click)="onSave(item)"> Save </button>
+        <button ng-show="check==false" (click)="onRemove(item)"> Delete </button>
+    </div>
+</div>
+<br>
+
+
