@@ -1,0 +1,12 @@
+.app {
+    width: 500px;
+    height: auto;
+    margin: auto;
+}
+
+.heading {
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: darkgreen;
+}

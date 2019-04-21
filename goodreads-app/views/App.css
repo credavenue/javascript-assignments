@@ -1,0 +1,46 @@
+.main-container {
+    height: auto;
+    background-color: saddlebrown;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    min-height: 100%;
+}
+
+.heading {
+    margin: 20px auto;
+    width: 300px;
+    text-align: center;
+    color: seashell;
+}
+
+.logo {
+    margin:auto;
+    width: 200px;
+    height: 100px;
+    background-image: url(./assets/goodreads.png);
+    background-size: 200px 100px; 
+}
+
+.pagination {
+    display: block;
+    width: 200px;
+    margin-right: 0px;
+    margin-left: auto;
+    padding: 10px;
+    color: seashell;
+}
+
+.pagination-links {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.previous.firstSet, .next.lastSet {
+    visibility: hidden;
+}
+
+.new-search-button {
+    width: 100px;
+    margin-left: calc(25% /2);
+}

@@ -1,0 +1,27 @@
+.table-container {
+    border: 2px dotted purple;
+    margin: auto;
+    width: 75%;
+    table-layout: fixed;
+    background-color: papayawhip;
+    border-style: outset;
+}
+
+.table-item {
+    width: 100px;
+    height: 50px;
+}
+
+.book-title {
+    width: 400px;
+}
+
+.input-box, .submit-button {
+    width: 200px;
+    display: block;
+    margin: 5px auto;
+}
+
+.submit-button {
+    width: 100px;
+}
